@@ -30,6 +30,16 @@
             then-layer = <3>;
         };
     };
+    
+    combos {
+        compatible = "zmk,combos";
+        // both Q and W for ESC
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,7 +55,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 SPACE &kp ESC       &lt 4 ENTER &lt 1 BSPC
+                                            &lt 2 SPACE &kp TAB        &lt 4 ENTER &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
