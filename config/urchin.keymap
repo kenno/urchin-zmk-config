@@ -121,8 +121,8 @@
         //│  {       │  &       │  *       │  (       │  }       │   │          │  MUTE    │  STOP    │  P/PAUSE │          │
             &kp LBRC   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC       &trans     &kp K_MUTE &kp K_STOP &kp K_PP   &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  :       │  $       │  %       │  ^       │  +       │   │ EP Tog   │ PREVIOUS │  VOL UP  │ VOL DOWN │  NEXT    │
-            &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS    &ext_power EP_TOG &kp K_PREV &kp K_VOL_UP &kp K_VOL_DN &kp K_NEXT 
+        //│  :       │  $       │  %       │  ^       │  +       │   │ EP Tog   │ PREVIOUS │ VOL DOWN │  VOL UP  │  NEXT    │
+            &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS    &ext_power EP_TOG &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  !       │  @       │  #       │  |       │   │ CLEAR BT │PROFILE 0 │PROFILE 1 │PROFILE 2 │PROFILE 3 │
             &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp PIPE      &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
