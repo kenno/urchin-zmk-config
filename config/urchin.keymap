@@ -53,7 +53,7 @@
             bindings = <&bootloader>;
         };
         // ', O, / for right bootloader
-        combo_left_bootloader {
+        combo_right_bootloader {
             timeout-ms = <50>;
             key-positions = <9 19 29>;
             bindings = <&bootloader>;
