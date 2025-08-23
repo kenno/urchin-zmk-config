@@ -87,7 +87,7 @@
             &kp LBKT   &kp N7     &kp N8     &kp N9     &kp RBKT       ___       &kp K_MUTE  &kp K_STOP &kp K_PP   ___ 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ;       │  4       │  5       │  6       │  =       │   │ EP Tog   │ PREVIOUS │ VOL DOWN │  VOL UP  │  NEXT    │
-            &kp SEMI   &kp N4     &kp N5     &kp N6     &kb EQUAL  &ext_power EP_TOG &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NET
+            &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL  &ext_power EP_TOG &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ `        │  1       │  2       │  3       │  \       │   │ CLEAR BT │PROFILE 0 │PROFILE 1 │PROFILE 2 │PROFILE 3 │
             &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp BSLH   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 
