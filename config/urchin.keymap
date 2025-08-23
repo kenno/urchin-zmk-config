@@ -34,10 +34,10 @@
     
     combos {
         compatible = "zmk,combos";
-        // both Q and W for ESC
+        // both W and F for ESC
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
     };
