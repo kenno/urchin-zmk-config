@@ -9,7 +9,7 @@
 
 #include "constants.h"
 
-#include "../behaviors/combos.dtsi"
+#include "behaviors/combos.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
