@@ -7,7 +7,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define ___ &trans
+#include "constants.h"
+
+#include "../behaviors/combos.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
@@ -26,43 +28,11 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        // both W and F for ESC
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp ESC>;
-        };
-        // both L and U for BSPC
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp BSPC>;
-        };
-        // both U and Y for DEL
-        combo_del {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp DEL>;
-        };
-        // Q, A, Z for left bootloader
-        combo_left_bootloader {
-            timeout-ms = <50>;
-            key-positions = <0 10 20>;
-            bindings = <&bootloader>;
-        };
-        // ', O, / for right bootloader
-        combo_right_bootloader {
-            timeout-ms = <50>;
-            key-positions = <9 19 29>;
-            bindings = <&bootloader>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
-        base_layer {
+
+        base {
+            display-name = "Base";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
@@ -79,8 +49,9 @@
             >;
         };
 
-        // 1. Num and Multi
-        number_multi_layer {
+        // 1. Num and Media
+        num_media {
+            display-name = "Num";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  [       │  7       │  8       │  9       │  ]       │   │          │  MUTE    │  STOP    │  P/PAUSE │          │
@@ -97,12 +68,13 @@
             >;
         };
 
-        // 2. Fun and Nav
-        fun_nav_layer {
+        // 2. Func and Nav
+        func_nav {
+            display-name = "Func";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ PRINTSCR │ F7       │ F8       │ F9       │ F12      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-            &kp PSCRN  &kp F7     &kp F8     &kp F9     &kp F12        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO 
+            &kp PSCRN  &kp F7     &kp F8     &kp F9     &kp F12        &kp C_REDO &kp C_PASTE &kp K_COPY &kp K_CUT &kp C_UNDO 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ SCROLLLO │ F4       │ F5       │ F6       │ F11      │   │ CAPSLOCK │  LEFT A  │  DOWN A  │  UP A    │  RIGHT A │
             &kp SLCK   &kp F4     &kp F5     &kp F6     &kp F11        &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT 
@@ -116,7 +88,8 @@
         };
 
         // 3. Sym
-        symbol_layer {
+        sym {
+            display-name = "Sym";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  {       │  &       │  *       │  (       │  }       │   │          │          │          │          │          │

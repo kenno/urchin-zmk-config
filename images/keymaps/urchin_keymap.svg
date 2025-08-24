@@ -135,8 +135,8 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
 }</style>
-<g transform="translate(30, 0)" class="layer-base_layer">
-<text x="0" y="28" class="label" id="base_layer">base_layer</text>
+<g transform="translate(30, 0)" class="layer-Base">
+<text x="0" y="28" class="label" id="Base">Base</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 81)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -269,8 +269,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(221, 221) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Spc</text>
-<a href="#fun_nav_layer">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">fun_nav_la…</tspan></text>
+<a href="#FuncNav">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 88%">Func/Nav</tspan></text>
 </a></g>
 <g transform="translate(279, 245) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -279,14 +279,14 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(393, 245) rotate(-30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#symbol_layer">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">symbol_lay…</tspan></text>
+<a href="#Sym">
+<text x="0" y="24" class="key hold layer-activator">Sym</text>
 </a></g>
 <g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Bspc</text>
-<a href="#number_multi_layer">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">number_mul…</tspan></text>
+<a href="#NumMedia">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">Num/Media</tspan></text>
 </a></g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
@@ -314,8 +314,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 339)" class="layer-number_multi_layer">
-<text x="0" y="28" class="label" id="number_multi_layer">number_multi_layer</text>
+<g transform="translate(30, 339)" class="layer-Num/Media">
+<text x="0" y="28" class="label" id="NumMedia">Num/Media</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 81)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -375,9 +375,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;kb</tspan><tspan x="0" dy="1.2em">EQUAL</tspan>
-</text>
+<text x="0" y="0" class="key tap">=</text>
 </g>
 <g transform="translate(420, 108)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -403,7 +401,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 137)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NET</text>
+<text x="0" y="0" class="key tap">NEXT</text>
 </g>
 <g transform="translate(28, 193)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -469,34 +467,10 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(451, 221) rotate(-15.0)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
-<text x="112" y="37" class="combo tap">Esc</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">Bspc</text>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">Del</text>
-</g>
-<g class="combo combopos-3">
-<path d="M28,137 l0,-37" class="combo"/>
-<path d="M28,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="14" y="124" width="28" height="26" class="combo"/>
-<text x="28" y="137" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-4">
-<path d="M644,137 l0,-37" class="combo"/>
-<path d="M644,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="630" y="124" width="28" height="26" class="combo"/>
-<text x="644" y="137" class="combo tap">Boot</text>
 </g>
 </g>
-</g>
-<g transform="translate(30, 678)" class="layer-fun_nav_layer">
-<text x="0" y="28" class="label" id="fun_nav_layer">fun_nav_layer</text>
+<g transform="translate(30, 678)" class="layer-Func/Nav">
+<text x="0" y="28" class="label" id="FuncNav">Func/Nav</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 81)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -634,34 +608,10 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Bspc</text>
 </g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
-<text x="112" y="37" class="combo tap">Esc</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">Bspc</text>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">Del</text>
-</g>
-<g class="combo combopos-3">
-<path d="M28,137 l0,-37" class="combo"/>
-<path d="M28,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="14" y="124" width="28" height="26" class="combo"/>
-<text x="28" y="137" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-4">
-<path d="M644,137 l0,-37" class="combo"/>
-<path d="M644,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="630" y="124" width="28" height="26" class="combo"/>
-<text x="644" y="137" class="combo tap">Boot</text>
 </g>
 </g>
-</g>
-<g transform="translate(30, 1016)" class="layer-symbol_layer">
-<text x="0" y="28" class="label" id="symbol_layer">symbol_layer</text>
+<g transform="translate(30, 1016)" class="layer-Sym">
+<text x="0" y="28" class="label" id="Sym">Sym</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 81)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -781,30 +731,6 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(451, 221) rotate(-15.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
-<text x="112" y="37" class="combo tap">Esc</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">Bspc</text>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">Del</text>
-</g>
-<g class="combo combopos-3">
-<path d="M28,137 l0,-37" class="combo"/>
-<path d="M28,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="14" y="124" width="28" height="26" class="combo"/>
-<text x="28" y="137" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-4">
-<path d="M644,137 l0,-37" class="combo"/>
-<path d="M644,137 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="630" y="124" width="28" height="26" class="combo"/>
-<text x="644" y="137" class="combo tap">Boot</text>
 </g>
 </g>
 </g>

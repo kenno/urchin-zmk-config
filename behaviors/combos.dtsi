@@ -1,0 +1,48 @@
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 40
+#define COMBO_PRIOR_IDLE 100
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    // both W and F for ESC
+    combo_esc {
+      timeout-ms = <COMBO_TERM_FAST>;
+      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <1 2>;
+      layers = <BAS>;
+      bindings = <&kp ESC>;
+    };
+    // both L and U for BSPC
+    combo_bspc {
+      timeout-ms = <COMBO_TERM_FAST>;
+      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <6 7>;
+      layers = <BAS>;
+      bindings = <&kp BSPC>;
+    };
+    // both U and Y for DEL
+    combo_del {
+      timeout-ms = <COMBO_TERM_FAST>;
+      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      key-positions = <7 8>;
+      layers = <BAS>;
+      bindings = <&kp DEL>;
+    };
+    // Q, A, Z for left bootloader
+    combo_left_bootloader {
+      timeout-ms = <COMBO_TERM_FAST>;
+      key-positions = <0 10 20>;
+      layers = <BAS>;
+      bindings = <&bootloader>;
+    };
+    // ', O, / for right bootloader
+    combo_right_bootloader {
+      timeout-ms = <COMBO_TERM_FAST>;
+      key-positions = <9 19 29>;
+      layers = <BAS>;
+      bindings = <&bootloader>;
+    };
+  };
+};
