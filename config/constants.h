@@ -7,5 +7,6 @@
 // Layer
 #define BAS 0
 #define NUM 1
-#define FUN 2
+#define NAV 2
 #define SYM 3
+#define FUN 4

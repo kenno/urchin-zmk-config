@@ -51,7 +51,7 @@
 
         // 1. Num and Media
         num_media {
-            display-name = "Num";
+            display-name = "Num.Med";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  [       │  7       │  8       │  9       │  ]       │   │          │  MUTE    │  STOP    │  P/PAUSE │          │
@@ -68,28 +68,28 @@
             >;
         };
 
-        // 2. Func and Nav
+        // 2. NAV - navigation
         func_nav {
-            display-name = "Func";
+            display-name = "Navi";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ PRINTSCR │ F7       │ F8       │ F9       │ F12      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-            &kp PSCRN  &kp F7     &kp F8     &kp F9     &kp F12        &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO 
+        //│          │          │          │          │          │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+            ___        ___        ___        ___        ___            &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SCROLLLO │ F4       │ F5       │ F6       │ F11      │   │ CAPSLOCK │  LEFT A  │  DOWN A  │  UP A    │  RIGHT A │
-            &kp SLCK   &kp F4     &kp F5     &kp F6     &kp F11        &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT 
+        //│  GUI     │  ALT     │  CTRL    │  SHIFT   │          │   │ CAPSLOCK │  LEFT A  │  DOWN A  │  UP A    │  RIGHT A │
+            &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  ___            &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ P/B      │ F1       │ F2       │ F3       │ F10      │   │  INSERT  │  HOME    │  PAGE D  │  PAGE U  │  END     │
-            &kp PAUSE_BREAK &kp F1   &kp F2  &kp F3     &kp F10        &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+        //│          │          │          │          │          │   │  INSERT  │  HOME    │  PAGE D  │  PAGE U  │  END     │
+            ___        ___        ___        ___        ___            &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              ___        ___            &kp ENTER  &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        // 3. Sym
+        // 3. SYM - symbol
         sym {
-            display-name = "Sym";
+            display-name = "Symb";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  {       │  &       │  *       │  (       │  }       │   │          │          │          │          │          │
@@ -102,6 +102,25 @@
             &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp PIPE       ___        ___        ___        ___        ___
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp RPAR   &kp UNDER      ___        ___
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        // 4. FUN - function
+        func {
+            display-name = "Func";
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  F12     │  F7      │  F8      │  F9      │ PRINTSCR │   │          │          │          │          │          │
+            &kp F12    &kp F7     &kp F8     &kp F9     &kp PSCRN      ___        ___        ___        ___        ___ 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  F11     │  F4      │  F5      │  F6      │ SCROLLLO │   │          │  SHIFT   │  CTRL    │  ALT     │  GUI     │
+            &kp F11    &kp F4     &kp F5     &kp F6     &kp SLCK       ___        &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  F10     │  F1      │  F2      │  F3      │ PAUS/BRK │   │          │          │          │          │          │
+            &kp F10    &kp F1     &kp F2     &kp F3     &kp PAUSE_BREAK  ___      ___        ___        ___        ___
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &kp SPACE  &kp TAB        ___        ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
