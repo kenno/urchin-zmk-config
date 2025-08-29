@@ -49,8 +49,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       key-positions = <32 33>;
       layers = <BAS>;
-      bindings = <&mo >;
-  
+      bindings = <&mo FUN>;
     };
   };
 };
