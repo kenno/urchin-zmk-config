@@ -10,3 +10,4 @@
 #define NAV 2
 #define SYM 3
 #define FUN 4
+#define MED 5

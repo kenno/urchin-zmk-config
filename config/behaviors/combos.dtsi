@@ -51,5 +51,13 @@
       layers = <BAS>;
       bindings = <&mo FUN>;
     };
+    // both left thumb keys
+    combo_func {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      key-positions = <30 31>;
+      layers = <BAS>;
+      bindings = <&mo MED>;
+    };
+
   };
 };
