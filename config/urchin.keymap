@@ -7,6 +7,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/36.h"
+
 #include "constants.h"
 
 #include "behaviors/combos.dtsi"

@@ -4,6 +4,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob/
     - name: duckyb
       url-base: https://github.com/duckyb
     - name: m165437
@@ -12,6 +14,9 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: main
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
