@@ -9,8 +9,8 @@
 
 #include "constants.h"
 
-#include "../behaviors/combos.dtsi"
-#include "../behaviors/hold-tap.dtsi"
+#include "behaviors/combos.dtsi"
+#include "behaviors/hold-tap.dtsi"
 
 / {
     keymap {

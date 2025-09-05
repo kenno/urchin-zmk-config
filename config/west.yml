@@ -1,10 +1,9 @@
 manifest:
-#  defaults:
-#    revision: v0.3
+  defaults:
+    revision: v0.3   # Pin everything to v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # kyek / duckyb
     - name: duckyb
       url-base: https://github.com/duckyb
     - name: m165437
