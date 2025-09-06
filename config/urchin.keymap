@@ -14,8 +14,8 @@
 #include "constants.h"
 
 #include "behaviors/combos.dtsi"
-#include "behaviors/hold-tap.dtsi"
 #include "behaviors/mod-morph.dtsi"
+#include "behaviors/hold-tap.dtsi"
 
 / {
     keymap {
@@ -34,7 +34,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NAV SPACE &lt MOU TAB  &lt SYM ENTER &lt_bspc NUM 0
+                                            &lt NAV SPACE &lt MOU TAB  &lt SYM ENTER &bs_del_num
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

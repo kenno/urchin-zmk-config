@@ -294,10 +294,8 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Bspc</text>
-<a href="#Numb">
-<text x="0" y="24" class="key hold layer-activator">Numb</text>
-</a></g>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bs_del_num</tspan></text>
+</g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
 <text x="112" y="37" class="combo tap">Esc</text>
@@ -459,8 +457,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(393, 245) rotate(-30.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(451, 221) rotate(-15.0)" class="key held keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(451, 221) rotate(-15.0)" class="key trans keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 </g>
 </g>
