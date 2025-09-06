@@ -14,6 +14,7 @@
       layers = <BAS>;
       bindings = <&kp ESC>;
     };
+
     // both L and U for BSPC
     combo_bspc {
       timeout-ms = <COMBO_TERM_FAST>;
@@ -22,6 +23,7 @@
       layers = <BAS>;
       bindings = <&kp BSPC>;
     };
+
     // both U and Y for DEL
     combo_del {
       timeout-ms = <COMBO_TERM_FAST>;
@@ -30,6 +32,7 @@
       layers = <BAS>;
       bindings = <&kp DEL>;
     };
+   
     // Q, A, Z for left bootloader
     combo_left_bootloader {
       timeout-ms = <COMBO_TERM_FAST>;
@@ -37,6 +40,7 @@
       layers = <BAS>;
       bindings = <&bootloader>;
     };
+
     // ', O, / for right bootloader
     combo_right_bootloader {
       timeout-ms = <COMBO_TERM_FAST>;
@@ -44,6 +48,7 @@
       layers = <BAS>;
       bindings = <&bootloader>;
     };
+
     // both right thumb keys
     combo_func {
       timeout-ms = <COMBO_TERM_SLOW>;
@@ -51,12 +56,21 @@
       layers = <BAS>;
       bindings = <&mo FUN>;
     };
+   
     // both left thumb keys
     combo_media {
       timeout-ms = <COMBO_TERM_SLOW>;
       key-positions = <30 31>;
       layers = <BAS>;
       bindings = <&mo MED>;
+    };
+
+    // both right thumb keys on MOUse layers
+    combo_mouse_middle_click {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      key-positions = <32 33>;
+      layers = <MOU>;
+      bindings = <&mkp MCLK>;
     };
   };
 };

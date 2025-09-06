@@ -11,3 +11,4 @@
 #define SYM 3
 #define FUN 4
 #define MED 5
+#define MOU 6

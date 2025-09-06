@@ -6,6 +6,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/36.h"
@@ -32,12 +33,12 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 SPACE &kp TAB        &lt 3 ENTER &lt 1 BSPC
+                                            &lt NAV SPACE &lt MOU TAB  &lt SYM ENTER &lt NUM BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        // 1. Num
+        // 1. NUM - number
         number {
             display-name = "Numb";
             bindings = <
@@ -113,7 +114,7 @@
             >;
         };
 
-        // 5. Media
+        // 5. MED - media
         media {
             display-name = "Medi";
             bindings = <
@@ -128,6 +129,25 @@
             ___        ___        ___        ___        ___        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              ___        ___            &kp K_STOP &kp K_PP
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        // 6. MOU - mouse
+        mouse {
+            display-name = "Mous";
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │  REDO    │  PASTE   │  COPY    │  CUT     │  MUTE    │
+            ___        ___        ___        ___        ___         &kp LC(LS(Z)) &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  GUI     │  ALT     │  CTRL    │  SHIFT   │          │   │          │MOVE LEFT │MOVE DOWN │MOVE UP   │MOVE RIGHT│
+            &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  ___            ___ &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │SCRL LEFT │SCRL DOWN │SCRL UP   │SCRL RIGHT│
+            ___        ___        ___        ___        ___            ___ &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             ___        ___            &mkp RCLK  &mkp LCLK 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
