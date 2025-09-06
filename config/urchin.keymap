@@ -15,6 +15,7 @@
 
 #include "behaviors/combos.dtsi"
 #include "behaviors/hold-tap.dtsi"
+#include "behaviors/mod-morph.dtsi"
 
 / {
     keymap {
@@ -33,7 +34,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NAV SPACE &lt MOU TAB  &lt SYM ENTER &lt NUM BSPC
+                                            &lt NAV SPACE &lt MOU TAB  &lt SYM ENTER &lt_bspc NUM 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

@@ -38,5 +38,13 @@ ZMK_HOLD_TAP(hmr,
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        lt_bspc: layer_tap_bspc_del {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BACKSPACE_DELETE";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&bspc_del>;
+            tapping-term-ms = <200>;
+        };
     };
 };
