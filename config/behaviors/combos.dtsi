@@ -19,7 +19,7 @@ ZMK_COMBO(bspc,  &kp BSPC,     RT1 RT2,     BAS NAV NUM, COMBO_TERM_FAST, COMBO_
 ZMK_COMBO(del,   &kp DEL,      RT2 RT3,     BAS NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Horizontal combos - left hand */
-ZMK_COMBO(esc,   &kp ESC,      LT3 LT2      BAS, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(esc,   &kp ESC,      LT2 LT3      BAS, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 / {
   combos {
