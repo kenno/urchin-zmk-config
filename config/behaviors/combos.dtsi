@@ -1,37 +1,56 @@
-#define COMBO_TERM_FAST 35
-#define COMBO_TERM_SLOW 40
+/*                KEY POSITIONS
+
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────────╮ LH1 LH0 │ │ RH0 RH1 ╭───────────╯
+              ╰─────────╯ ╰─────────╯ */
+
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
 #define COMBO_PRIOR_IDLE 100
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+/* Horizontal combos - right hand */
+ZMK_COMBO(bspc,  &kp BSPC,     RT1 RT2,     BAS NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(del,   &kp DEL,      RT2 RT3,     BAS NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* Horizontal combos - left hand */
+ZMK_COMBO(esc,   &kp ESC,      LT3 LT2      BAS, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 / {
   combos {
     compatible = "zmk,combos";
 
-    // both W and F for ESC
-    combo_esc {
-      timeout-ms = <COMBO_TERM_FAST>;
-      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-      key-positions = <1 2>;
-      layers = <BAS>;
-      bindings = <&kp ESC>;
-    };
+    // // both W and F for ESC
+    // combo_esc {
+    //   timeout-ms = <COMBO_TERM_FAST>;
+    //   require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    //   key-positions = <1 2>;
+    //   layers = <BAS>;
+    //   bindings = <&kp ESC>;
+    // };
 
-    // both L and U for BSPC
-    combo_bspc {
-      timeout-ms = <COMBO_TERM_FAST>;
-      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-      key-positions = <6 7>;
-      layers = <BAS>;
-      bindings = <&kp BSPC>;
-    };
+    // // both L and U for BSPC
+    // combo_bspc {
+    //   timeout-ms = <COMBO_TERM_FAST>;
+    //   require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    //   key-positions = <6 7>;
+    //   layers = <BAS>;
+    //   bindings = <&kp BSPC>;
+    // };
 
-    // both U and Y for DEL
-    combo_del {
-      timeout-ms = <COMBO_TERM_FAST>;
-      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-      key-positions = <7 8>;
-      layers = <BAS>;
-      bindings = <&kp DEL>;
-    };
+    // // both U and Y for DEL
+    // combo_del {
+    //   timeout-ms = <COMBO_TERM_FAST>;
+    //   require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    //   key-positions = <7 8>;
+    //   layers = <BAS>;
+    //   bindings = <&kp DEL>;
+    // };
    
     // Q, A, Z for left bootloader
     combo_left_bootloader {

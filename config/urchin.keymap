@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/36.h"
+#include "zmk-helpers/key-labels/34.h"
 
 #include "constants.h"
 
@@ -64,7 +64,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-            ___        ___        ___        ___        ___            &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO 
+            ___        ___        ___        ___        ___            &kp LC(LS(Z)) &kp LS(INS) &kp LS(INS) &kp LC(X) &kp LC(Z) 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  GUI     │  ALT     │  CTRL    │  SHIFT   │          │   │ CAPSLOCK │  LEFT A  │  DOWN A  │  UP A    │  RIGHT A │
             &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  ___            &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT 
@@ -139,7 +139,7 @@
             display-name = "Mous";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │  REDO    │  PASTE   │  COPY    │  CUT     │  MUTE    │
+        //│          │          │          │          │          │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
             ___        ___        ___        ___        ___         &kp LC(LS(Z)) &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  GUI     │  ALT     │  CTRL    │  SHIFT   │          │   │          │MOVE LEFT │MOVE DOWN │MOVE UP   │MOVE RIGHT│
