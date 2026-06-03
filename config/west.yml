@@ -1,7 +1,7 @@
 manifest:
   defaults:
-    #revision: v0.3   # Pin everything to v0.3
-    revision: main   # Pin everything to v0.3
+    revision: v0.3   # Pin everything to v0.3
+    #revision: main   # Pin everything to v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -23,6 +23,7 @@ manifest:
       revision: main
     - name: nice-view-gem
       remote: m165437
-      revision: main
+      revision: v0.3.0
+      #revision: main
   self:
     path: config
