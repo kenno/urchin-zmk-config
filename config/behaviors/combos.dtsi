@@ -36,8 +36,7 @@ ZMK_COMBO(esc,   &kp ESC,      LT3 LT2,     BAS, COMBO_TERM_SLOW, COMBO_IDLE_FAS
 
     // both L and U for BSPC
     combo_bspc {
-      timeout-ms = <COMBO_TERM_FAST>;
-      require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+      timeout-ms = <60>;
       key-positions = <RT1 RT2>;   // 6 7
       layers = <BAS>;
       bindings = <&kp BSPC>;
