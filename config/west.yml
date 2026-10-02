@@ -1,7 +1,6 @@
 manifest:
   defaults:
-    revision: v0.3   # Pin everything to v0.3
-    #revision: main   # Pin everything to v0.3
+    revision: main   # Pin everything to main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -17,12 +16,10 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: v0.3  # Should match ZMK release
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
     - name: nice-view-gem
       remote: m165437
-      revision: v0.3.0 # Should match ZMK release
   self:
     path: config
